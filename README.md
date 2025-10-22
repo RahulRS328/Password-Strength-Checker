@@ -25,6 +25,7 @@ git clone https://github.com/RahulRS328/Password-Strength-Checker.git
 cd Password-Strength-Checker
 
 ### 2️⃣ Create a Virtual Environment (Recommended)
+```bash
 
 python3 -m venv venv
 source venv/bin/activate     # On Linux / macOS
