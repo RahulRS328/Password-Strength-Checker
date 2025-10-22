@@ -81,7 +81,6 @@ Pull requests are welcome!
 If you’d like to improve this project, fork it and submit a PR.
 ```
 🧑‍💻 Author
-```
+
 Rahul R S
 📘 [GitHub Profile](https://github.com/RahulRS328)
-
