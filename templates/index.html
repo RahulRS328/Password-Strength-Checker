@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+<h2>Hello, {{ username | default('Guest') }}. 👋</h2>
+<p>
+  Enter a password to analyze its strength and check if it has been exposed in
+  a data breach.
+</p>
+
+<form method="POST" action="{{ url_for('index') }}">
+  <label for="password">Enter Password:</label>
+  <input type="password" id="password" name="password" required />
+  <button type="submit" class="btn">Analyze Password</button>
+</form>
+
+{% if result %}
+<div class="analysis-result">
+  <h3>🔍 Analysis Result</h3>
+  <p>
+    <strong>Score:</strong>
+    {{ result.score }}/4
+  </p>
+
+  <p>
+    <strong>Feedback:</strong>
+    {% if result['remarks'] %}
+    <ul>
+      {% for remark in result['remarks'] %}
+      <li>{{ remark }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <span class="breach-safe">Excellent password strength! 💪</span>
+    {% endif %}
+  </p>
+
+  <p><strong>Suggestion:</strong> {{ suggestion }}</p>
+
+  <p>
+    <strong>Breach Check:</strong>
+    {% if breached %}
+    <span class="breach-found"> ⚠️ Found in known data breaches </span>
+    {% else %}
+    <span class="breach-safe"> ✅ Safe — not found </span>
+    {% endif %}
+  </p>
+</div>
+{% endif %} {% endblock %}
