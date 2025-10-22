@@ -27,7 +27,6 @@ cd Password-Strength-Checker
 
 ### 2️⃣ Create a Virtual Environment (Recommended)
 ```
-
 python3 -m venv venv
 source venv/bin/activate     # On Linux / macOS
 # OR
@@ -76,10 +75,10 @@ Password-Strength-Checker/
 └── README.md               # Project documentation
 ```
 ### 🤝 Contributing
-```
+
 Pull requests are welcome!
 If you’d like to improve this project, fork it and submit a PR.
-```
+
 🧑‍💻 Author
 
 Rahul R S
