@@ -23,28 +23,29 @@ Follow these simple steps to run it locally 👇
 ```bash
 git clone https://github.com/RahulRS328/Password-Strength-Checker.git
 cd Password-Strength-Checker
+```
 
 ### 2️⃣ Create a Virtual Environment (Recommended)
-```bash
+```
 
 python3 -m venv venv
 source venv/bin/activate     # On Linux / macOS
 # OR
 venv\Scripts\activate        # On Windows
-
+```
 ### 3️⃣ Install Dependencies
-
+```
 pip install -r requirements.txt
-
+```
 ### 4️⃣ Run the Application
-
+```
 python app.py
 
 Then open your browser and visit 👉
 http://127.0.0.1:5000/
-
+```
 ### 🧠 Usage
-
+```
 Run the Flask app.
 
 Enter your password on the main page.
@@ -58,9 +59,9 @@ Feedback message
 Suggestions for improvement
 
 Optional breach check
-
+```
 ### 📂 Project Structure
-
+```
 Password-Strength-Checker/
 │
 ├── app.py                  # Main Flask app
@@ -73,13 +74,14 @@ Password-Strength-Checker/
 ├── static/
 │   └── style.css           # Frontend styling
 └── README.md               # Project documentation
-
+```
 ### 🤝 Contributing
+```
 Pull requests are welcome!
 If you’d like to improve this project, fork it and submit a PR.
-
+```
 🧑‍💻 Author
-
+```
 Rahul R S
 📘 [GitHub Profile](https://github.com/RahulRS328)
 
